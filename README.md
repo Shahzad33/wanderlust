@@ -41,7 +41,7 @@ _We want you to get the most out of this project—it's all about learning, cont
 <hr>
 
 <div>
-  <h2><img src="https://github.com/Meetjain1/wanderlust/assets/133582566/1ee5934a-27be-4502-a7bf-e6a8c78fe5a3" width="35" height="35"> Installation</h2>
+  <h2><img src="https://github.com/Meetjain1/wanderlust/assets/133582566/1ee5934a-27be-4502-a7bf-e6a8c78fe5a3" width="35" height="35"> Installation Backend</h2>
 </div>
 
 - **Clone the code :** git clone https://github.com/Shahzad33/wanderlust.git
@@ -56,11 +56,12 @@ _We want you to get the most out of this project—it's all about learning, cont
 - **Navigate to the backend dir:** cd wanderlust/backend
 - **Install required package:** npm i 
 
+
+
 <div>
   <h2><img src="https://github.com/Meetjain1/wanderlust/assets/133582566/1ee5934a-27be-4502-a7bf-e6a8c78fe5a3" width="35" height="35"> Setup your MongoDB database</h2>
 </div>
 
- 
 - **Navigate to the root dir:** cd ../..
 - **Import the public key:** sudo apt-get install gnupg curl
 - **To import the MongoDB public:** curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
@@ -78,3 +79,20 @@ _We want you to get the most out of this project—it's all about learning, cont
 - **Exit the mogodb:** npm start
 <hr>
 
+
+
+<div>
+  <h2><img src="https://github.com/Meetjain1/wanderlust/assets/133582566/1ee5934a-27be-4502-a7bf-e6a8c78fe5a3" width="35" height="35"> Setting up Frontend</h2>
+</div>
+
+- **Navigate to the root dir:** cd wanderlust/frontend
+- **Install required package:** npm i 
+- **Copy contant:** cp .env.sample .env.local
+- **Start dev:** npm run dev
+- **Check the mogodb:** mongosh
+- **Exit the mogodb:** exit
+- **Navigate to the backend dir:** cd wanderlust/backend
+- **Import data from a JSON:** mongoimport --db wonderlust --collection posts --file ./data/sample_posts.json --jsonArray
+- **Copy contant:** cp .env.sample .env
+- **Exit the mogodb:** npm start
+<hr>
