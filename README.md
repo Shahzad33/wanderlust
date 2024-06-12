@@ -76,7 +76,7 @@ _We want you to get the most out of this project—it's all about learning, cont
 - **Navigate to the backend dir:** cd wanderlust/backend
 - **Import data from a JSON:** mongoimport --db wonderlust --collection posts --file ./data/sample_posts.json --jsonArray
 - **Copy contant:** cp .env.sample .env
-- **Exit the mogodb:** npm start
+- **Start mogodb:** npm start
 <hr>
 
 
@@ -89,10 +89,8 @@ _We want you to get the most out of this project—it's all about learning, cont
 - **Install required package:** npm i 
 - **Copy contant:** cp .env.sample .env.local
 - **Start dev:** npm run dev
-- **Check the mogodb:** mongosh
-- **Exit the mogodb:** exit
-- **Navigate to the backend dir:** cd wanderlust/backend
-- **Import data from a JSON:** mongoimport --db wonderlust --collection posts --file ./data/sample_posts.json --jsonArray
-- **Copy contant:** cp .env.sample .env
-- **Exit the mogodb:** npm start
+- **Expose the server:** npm run dev -- --host 
+- **Run background the server:** nohup npm run dev -- --host & 
+
+
 <hr>
